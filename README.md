@@ -26,7 +26,7 @@ Multiple tags can be mapped to the same port and protocol combination.
   
 1. Make sure you have Python 3.x installed on your machine.
 2. Clone this repo to your machine.
-3. Run the following command **within src** :
+3. Run the following command **WITHIN src folder** :
 		``` python log_tagger.py ```
 
 
