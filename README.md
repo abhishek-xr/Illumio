@@ -21,7 +21,8 @@ Multiple tags can be mapped to the same port and protocol combination.
 2. Clone this repo to your machine.
 3. Run the following command **within src** :
 		``` python log_tagger.py ```
-	This should generate 3 output files:
+
+This should generate 3 output files:
 + output.csv : Contains the tagged log entries which serves as our lookup file.
 + output_tag_counts.csv : Contains the count of each tag 
 + out_port_protocol_counts.csv : Contains the count for each port/protocol combination in dstport
