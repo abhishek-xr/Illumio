@@ -29,7 +29,7 @@ Multiple tags can be mapped to the same port and protocol combination.
     ``` cd ../tests ```
 2. Run the following command : 
 	``` python test_log_tagger.py ```
-	The current test cases are:
+>The current test cases are:
     	Verifying that an empty lookup table is returned if the lookup file is not found
     	Ensures that the program raises a FileNotFoundError if the log file does not exist.
     	Validates that the program correctly processes a valid log file and generates output with the correct number of lines
