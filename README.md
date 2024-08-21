@@ -8,7 +8,7 @@ The program only supports the default log format, specifically formatted to foll
 
 ``` [Version, AccountID, InterfaceID, SrcAddr, DstAddr, SrcPort, DstPort, Protocol, Packets, Bytes,StartTime, EndTime, Action, LogStatus, Tag] ```
 
-*We are converting the plain txt files to a new output.csv lookup table to match ports/protocols to the tag for ease of use in the program*
+**We are converting the plain txt files to a new output.csv lookup table to match ports/protocols to the tag for ease of use in the program**
 
 # Requirements met:
 The program is optimized to handle log files up to 10 MB in size.
@@ -22,7 +22,7 @@ Multiple tags can be mapped to the same port and protocol combination.
 3. Run the following command **within src** :
 		``` python log_tagger.py ```
 	This should generate 3 output files:
-		output.csv : Contains the tagged log entries
+		output.csv : Contains the tagged log entries which serves as our lookup file. 
 		output_tag_counts.csv : Contains the count of each tag 
 		out_port_protocol_counts.csv : Contains the count for each port/protocol combination in dstport
 
