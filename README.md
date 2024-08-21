@@ -35,9 +35,9 @@ This should generate 3 output files:
 2. Run the following command : 
 	``` python test_log_tagger.py ```
 >The current test cases are:
-+ Verifying that an empty lookup table is returned if the lookup file is not found
-+ Ensures that the program raises a FileNotFoundError if the log file does not exist.
-+ Validates that the program correctly processes a valid log file and generates output with the correct number of lines
+> + Verifying that an empty lookup table is returned if the lookup file is not found
+> + Ensures that the program raises a FileNotFoundError if the log file does not exist.
+> + Validates that the program correctly processes a valid log file and generates output with the correct number of lines
 
 # Cleanup (just in case)
 Run this command in case you wish to clean up the generated output files: 
