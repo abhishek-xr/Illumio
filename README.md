@@ -15,7 +15,15 @@ The lookup table can contain up to 10,000 mappings.
 Protocol names in the lookup table and logs are case-insensitive. The program automatically converts protocol names to lowercase during processing
 Multiple tags can be mapped to the same port and protocol combination.
   
-# Installation & Execution:
+# Outline, Installation & Execution:
+
+> * We essentially wish to:
+> * Parse the flow log & lookup CSV file
+> * Match logs with tags based on the DSTPort and Protocol
+> * Count matches for both tags and port/protocol combinations
+> * Output these counts in specified formats
+
+  
 1. Make sure you have Python 3.x installed on your machine.
 2. Clone this repo to your machine.
 3. Run the following command **within src** :
