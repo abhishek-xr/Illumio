@@ -17,7 +17,7 @@ Multiple tags can be mapped to the same port and protocol combination.
   
 # Outline, Installation & Execution:
 
-> * We essentially wish to:
+* We essentially wish to:
 > * Parse the flow log & lookup CSV file
 > * Match logs with tags based on the DSTPort and Protocol
 > * Count matches for both tags and port/protocol combinations
