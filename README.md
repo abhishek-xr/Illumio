@@ -8,7 +8,6 @@ The program only supports the default log format, specifically formatted to foll
 
 ``` [Version, AccountID, InterfaceID, SrcAddr, DstAddr, SrcPort, DstPort, Protocol, Packets, Bytes,StartTime, EndTime, Action, LogStatus, Tag] ```
 
-**We are converting the plain txt files to a new ```output.csv``` lookup table to match ports/protocols to the tag for ease of use in the program**
 
 # Requirements met:
 The program is optimized to handle log files up to 10 MB in size.
@@ -22,6 +21,9 @@ Multiple tags can be mapped to the same port and protocol combination.
 3. Run the following command **within src** :
 		``` python log_tagger.py ```
 
+
+**We are converting the plain txt files to a new ```output.csv``` lookup table to match ports/protocols to the tag for ease of use in the program**
+
 This should generate 3 output files:
 + output.csv : Contains the tagged log entries which serves as our lookup file.
 + output_tag_counts.csv : Contains the count of each tag 
@@ -33,9 +35,9 @@ This should generate 3 output files:
 2. Run the following command : 
 	``` python test_log_tagger.py ```
 >The current test cases are:
-    	Verifying that an empty lookup table is returned if the lookup file is not found
-    	Ensures that the program raises a FileNotFoundError if the log file does not exist.
-    	Validates that the program correctly processes a valid log file and generates output with the correct number of lines
+    	+ Verifying that an empty lookup table is returned if the lookup file is not found
+    	+ Ensures that the program raises a FileNotFoundError if the log file does not exist.
+    	+ Validates that the program correctly processes a valid log file and generates output with the correct number of lines
 
 # Cleanup (just in case)
 Run this command in case you wish to clean up the generated output files: 
