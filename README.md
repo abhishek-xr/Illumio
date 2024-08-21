@@ -1,12 +1,13 @@
 # Illumio
-Assessment to identify network flow logs and tag data for further analysis within the network. Designed to process network flow logs and tag each log entry based on predefined port and protocol mappings. The program reads log files and a lookup table in plain text (ASCII) format. 
-Outputs the tagged log entries along with summary files that count the occurrences of each tag and port/protocol combination.
+> Designed to process network flow logs and tag each log entry based on predefined port and protocol mappings.
+> The program reads log files and a lookup table in plain text (ASCII) format.
+> Outputs the tagged log entries along with summary files that count the occurrences of each tag and port/protocol combination.
 
 # Assumptions made for the program:
 The program only supports the default log format, specifically formatted to follow the AWS Flow Log Record format as outlined below and only supports Version 2: 
 ``` [Version, AccountID, InterfaceID, SrcAddr, DstAddr, SrcPort, DstPort, Protocol, Packets, Bytes,StartTime, EndTime, Action, LogStatus, Tag] ```
 
-We are converting the plain txt files to a new output.csv lookup table to match ports/protocols to the tag for ease of use in the program
+* We are converting the plain txt files to a new output.csv lookup table to match ports/protocols to the tag for ease of use in the program *
 
 # Requirements met:
 The program is optimized to handle log files up to 10 MB in size.
