@@ -4,7 +4,7 @@ Outputs the tagged log entries along with summary files that count the occurrenc
 
 # Assumptions made for the program:
 The program only supports the default log format, specifically formatted to follow the AWS Flow Log Record format as outlined below and only supports Version 2: 
-[Version, AccountID, InterfaceID, SrcAddr, DstAddr, SrcPort, DstPort, Protocol, Packets, Bytes,StartTime, EndTime, Action, LogStatus, Tag]
+``` [Version, AccountID, InterfaceID, SrcAddr, DstAddr, SrcPort, DstPort, Protocol, Packets, Bytes,StartTime, EndTime, Action, LogStatus, Tag] ```
 
 We are converting the plain txt files to a new output.csv lookup table to match ports/protocols to the tag for ease of use in the program
 
@@ -18,7 +18,7 @@ Multiple tags can be mapped to the same port and protocol combination.
 1. Make sure you have Python 3.x installed on your machine.
 2. Clone this repo to your machine.
 3. Run the following command within src :
-		python log_tagger.py
+		``` python log_tagger.py ```
 	This should generate 3 output files:
 		output.csv : Contains the tagged log entries
 		output_tag_counts.csv : Contains the count of each tag 
@@ -26,9 +26,9 @@ Multiple tags can be mapped to the same port and protocol combination.
 
 # Running Tests
 1. Navigate to the tests directory
-    cd ../tests
+    ``` cd ../tests ```
 2. Run the following command : 
-	python test_log_tagger.py
+	``` python test_log_tagger.py ```
 	The current test cases are:
     	Verifying that an empty lookup table is returned if the lookup file is not found
     	Ensures that the program raises a FileNotFoundError if the log file does not exist.
@@ -36,4 +36,4 @@ Multiple tags can be mapped to the same port and protocol combination.
 
 # Cleanup (just in case)
 Run this command in case you wish to clean up the generated output files: 
-    rm output.csv output_tag_counts.csv output_port_protocol_counts.csv
+   ``` rm output.csv output_tag_counts.csv output_port_protocol_counts.csv ```
